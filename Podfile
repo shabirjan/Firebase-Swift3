@@ -5,9 +5,14 @@ target 'FirebaseTutorial' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for FirebaseTutorial
+# Pods for Firebase
   
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+	
+# Pods for Facebook
+pod 'Bolts'
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
 
 end

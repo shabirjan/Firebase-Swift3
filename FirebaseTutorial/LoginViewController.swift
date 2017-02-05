@@ -2,8 +2,8 @@
 //  LoginViewController.swift
 //  FirebaseTutorial
 //
-//  Created by James Dacombe on 16/11/2016.
-//  Copyright © 2016 AppCoda. All rights reserved.
+//  Created by Shabir Jan on 5/02/2017.
+//  Copyright Shabir Jan. All rights reserved.
 //
 
 import UIKit

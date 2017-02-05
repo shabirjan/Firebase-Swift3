@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FirebaseTutorial/FacebookLoginViewController.swift"
-            timestampString = "507986913.847167"
+            timestampString = "507987621.676852"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "btnSignInFb(_:)"
             landmarkType = "7">
          </BreakpointContent>

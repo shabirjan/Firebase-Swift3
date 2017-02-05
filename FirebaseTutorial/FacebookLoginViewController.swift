@@ -64,7 +64,7 @@ class FacebookLoginViewController: UIViewController {
                 }
             })
         }else{
-             self?.btnFb.setTitle("SIGN IN WITH FACEBOOK", for:.normal)
+             self.btnFb.setTitle("SIGN IN WITH FACEBOOK", for:.normal)
             do{
                 try FIRAuth.auth()?.signOut()
             }catch let error as NSError{

@@ -263,6 +263,9 @@
                             <constraint firstItem="j0y-5L-CrV" firstAttribute="top" secondItem="VjR-lY-WjE" secondAttribute="bottom" constant="20" id="Lq4-7V-c6Y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnFb" destination="VjR-lY-WjE" id="wKs-21-TLF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5IQ-pA-xar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

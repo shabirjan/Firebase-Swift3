@@ -8,5 +8,6 @@ target 'FirebaseTutorial' do
   # Pods for FirebaseTutorial
   
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
 
 end

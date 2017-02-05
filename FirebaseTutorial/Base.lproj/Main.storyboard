@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eaE-HM-yhK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dbr-cf-hp1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -95,6 +95,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tN7-MN-Sdg" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137" y="56"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SOD-vS-dLs">
+            <objects>
+                <viewController id="dbr-cf-hp1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RiX-wR-zjG"/>
+                        <viewControllerLayoutGuide type="bottom" id="5zN-bs-qn1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0XI-cH-h4h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbG-GC-xbc">
+                                <rect key="frame" x="16" y="28" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.38823529410000002" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bv2-OF-q2K"/>
+                                </constraints>
+                                <state key="normal" title="Firebase - Email &amp; Password"/>
+                                <connections>
+                                    <segue destination="eaE-HM-yhK" kind="presentation" id="TDa-wb-hrA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgq-N1-Y6k">
+                                <rect key="frame" x="16" y="82" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.38823529410000002" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Firebase - Facebook"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47439628839999998" green="0.59503257269999998" blue="0.67438691849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XbG-GC-xbc" firstAttribute="top" secondItem="RiX-wR-zjG" secondAttribute="bottom" constant="8" id="ONi-gq-T64"/>
+                            <constraint firstItem="xgq-N1-Y6k" firstAttribute="leading" secondItem="0XI-cH-h4h" secondAttribute="leadingMargin" id="YTC-8c-AQs"/>
+                            <constraint firstItem="xgq-N1-Y6k" firstAttribute="top" secondItem="XbG-GC-xbc" secondAttribute="bottom" constant="14" id="YbM-jA-Elr"/>
+                            <constraint firstAttribute="trailing" secondItem="XbG-GC-xbc" secondAttribute="trailing" constant="16" id="pfz-qh-nCN"/>
+                            <constraint firstItem="xgq-N1-Y6k" firstAttribute="trailing" secondItem="0XI-cH-h4h" secondAttribute="trailingMargin" id="tgW-Nf-sNw"/>
+                            <constraint firstItem="XbG-GC-xbc" firstAttribute="leading" secondItem="0XI-cH-h4h" secondAttribute="leading" constant="16" id="vHj-Ph-Wvx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ig6-PZ-mI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-994.39999999999998" y="973.76311844077964"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Edj-Iz-mGG">
@@ -272,8 +316,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jCO-ed-QLw"/>
-        <segue reference="d7R-4T-WIa"/>
         <segue reference="zck-D5-27A"/>
+        <segue reference="TDa-wb-hrA"/>
+        <segue reference="jCO-ed-QLw"/>
     </inferredMetricsTieBreakers>
 </document>

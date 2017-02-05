@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="fqI-tn-5iE">
@@ -123,6 +128,9 @@
                                 <rect key="frame" x="16" y="82" width="343" height="40"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.38823529410000002" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Firebase - Facebook"/>
+                                <connections>
+                                    <segue destination="xfc-ss-aJW" kind="presentation" id="mnR-9l-U9a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.47439628839999998" green="0.59503257269999998" blue="0.67438691849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -214,6 +222,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GaQ-XU-G4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-129" y="971"/>
+        </scene>
+        <!--Facebook Login View Controller-->
+        <scene sceneID="NUo-um-3ls">
+            <objects>
+                <viewController id="xfc-ss-aJW" customClass="FacebookLoginViewController" customModule="FirebaseTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sC5-hO-2U5"/>
+                        <viewControllerLayoutGuide type="bottom" id="j0y-5L-CrV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hPR-JM-pX6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjR-lY-WjE">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LBj-5y-R0m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="SIGN IN WITH FACEBOOK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSignInFb:" destination="xfc-ss-aJW" eventType="touchUpInside" id="SnG-m6-dt0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.054395392537117004" green="0.061269320547580719" blue="0.12346792966127396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VjR-lY-WjE" firstAttribute="leading" secondItem="hPR-JM-pX6" secondAttribute="leadingMargin" id="4UG-qu-H3U"/>
+                            <constraint firstItem="VjR-lY-WjE" firstAttribute="trailing" secondItem="hPR-JM-pX6" secondAttribute="trailingMargin" id="9sP-qV-rBr"/>
+                            <constraint firstItem="j0y-5L-CrV" firstAttribute="top" secondItem="VjR-lY-WjE" secondAttribute="bottom" constant="20" id="Lq4-7V-c6Y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5IQ-pA-xar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="1627"/>
         </scene>
         <!--Reset Password View Controller-->
         <scene sceneID="pFA-kg-ZF1">

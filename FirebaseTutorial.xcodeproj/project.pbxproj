@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D05F72651E471CC40048774B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D05F72641E471CC40048774B /* GoogleService-Info.plist */; };
+		D05F72691E473A7F0048774B /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F72681E473A7F0048774B /* FacebookLoginViewController.swift */; };
 		F4443AE01DF2DFDA00800C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4443ADF1DF2DFDA00800C92 /* AppDelegate.swift */; };
 		F4443AE51DF2DFDA00800C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4443AE31DF2DFDA00800C92 /* Main.storyboard */; };
 		F4443AE71DF2DFDA00800C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4443AE61DF2DFDA00800C92 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		B4DF6608DDE690783343C8F5 /* Pods_FirebaseTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15B014FF8258745372549FE /* Pods-FirebaseTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTutorial/Pods-FirebaseTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		D05F72641E471CC40048774B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D05F72681E473A7F0048774B /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
 		F4443ADC1DF2DFDA00800C92 /* FirebaseTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4443ADF1DF2DFDA00800C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4443AE41DF2DFDA00800C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D05F72661E473A580048774B /* Firebase Email  */ = {
+			isa = PBXGroup;
+			children = (
+				F4443AF11DF2E34F00800C92 /* SignUpViewController.swift */,
+				F4443AF21DF2E34F00800C92 /* HomeViewController.swift */,
+				F4443AF31DF2E34F00800C92 /* LoginViewController.swift */,
+				F4443AF41DF2E34F00800C92 /* ResetPasswordViewController.swift */,
+			);
+			name = "Firebase Email ";
+			sourceTree = "<group>";
+		};
+		D05F72671E473A690048774B /* Firebase Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				D05F72681E473A7F0048774B /* FacebookLoginViewController.swift */,
+			);
+			name = "Firebase Facebook";
+			sourceTree = "<group>";
+		};
 		F4443AD31DF2DFDA00800C92 = {
 			isa = PBXGroup;
 			children = (
@@ -86,10 +107,8 @@
 		F4443ADE1DF2DFDA00800C92 /* FirebaseTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				F4443AF11DF2E34F00800C92 /* SignUpViewController.swift */,
-				F4443AF21DF2E34F00800C92 /* HomeViewController.swift */,
-				F4443AF31DF2E34F00800C92 /* LoginViewController.swift */,
-				F4443AF41DF2E34F00800C92 /* ResetPasswordViewController.swift */,
+				D05F72671E473A690048774B /* Firebase Facebook */,
+				D05F72661E473A580048774B /* Firebase Email  */,
 				F4443ADF1DF2DFDA00800C92 /* AppDelegate.swift */,
 				F4443AE31DF2DFDA00800C92 /* Main.storyboard */,
 				F4443AE61DF2DFDA00800C92 /* Assets.xcassets */,
@@ -226,6 +245,7 @@
 			files = (
 				F4443AF71DF2E34F00800C92 /* LoginViewController.swift in Sources */,
 				F4443AF51DF2E34F00800C92 /* SignUpViewController.swift in Sources */,
+				D05F72691E473A7F0048774B /* FacebookLoginViewController.swift in Sources */,
 				F4443AF81DF2E34F00800C92 /* ResetPasswordViewController.swift in Sources */,
 				F4443AE01DF2DFDA00800C92 /* AppDelegate.swift in Sources */,
 				F4443AF61DF2E34F00800C92 /* HomeViewController.swift in Sources */,
